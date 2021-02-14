@@ -1,0 +1,28 @@
+.categories {
+  @include flex-center;
+  justify-content: space-between;
+  &__btn {
+    @include buttonPrimary(#111, #faf8f8, #fff, #111);
+  }
+  &__popup {
+    @include flex-center;
+    span {
+      color: $color-buttons;
+      cursor: pointer;
+    }
+    &__wrapper {
+      padding: 15px 0px;
+      &-item {
+        padding: 5px 10px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        &:hover {
+          background: #fe5f2044;
+        }
+        &.active {
+          background: $color-buttons;
+        }
+      }
+    }
+  }
+}

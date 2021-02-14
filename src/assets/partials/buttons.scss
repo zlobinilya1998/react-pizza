@@ -1,0 +1,19 @@
+@mixin buttonPrimary($color, $bg-color, $hover-color, $hover-bg) {
+  min-width: 120px;
+  text-align: center;
+  height: 45px;
+  border-radius: 30px;
+  color: $color;
+  background: $bg-color;
+  border: none;
+  transition: all 0.3s ease;
+  font-size: $fs-primary;
+  cursor: pointer;
+  &.active {
+    color: $hover-color;
+    background: $hover-bg;
+    &:focus {
+      outline: none;
+    }
+  }
+}

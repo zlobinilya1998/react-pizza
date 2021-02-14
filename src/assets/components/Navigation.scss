@@ -1,0 +1,41 @@
+.header {
+  background: #c9dad6;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.nav {
+  width: 15%;
+  min-width: 200px;
+}
+.ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.li {
+  color: #7f8181;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+.li:hover {
+  opacity: 0.6;
+}
+.activeBtn {
+  color: #edfa7e;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+.accountIcon {
+  transition: color 0.3s ease-in;
+  position: absolute;
+  right: 25px;
+  top: 20%;
+}
+.accountIcon:hover {
+  color: #4f664c;
+}
