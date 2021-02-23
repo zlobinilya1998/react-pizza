@@ -1,0 +1,31 @@
+.logo {
+  @include flex-center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  &__left {
+    @include flex-center;
+    justify-content: space-between;
+    min-width: 400px;
+  }
+  &__title {
+    font-weight: bolder;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    font-weight: lighter;
+    color: hsl(0, 3%, 73%);
+  }
+  &__btn {
+    @include flex-center;
+    justify-content: space-between;
+    @include buttonPrimary(
+      $color-primary,
+      $color-buttons,
+      $color-buttons,
+      $color-primary
+    );
+    padding: 10px 20px;
+    &:hover {
+    }
+  }
+}

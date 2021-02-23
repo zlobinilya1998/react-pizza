@@ -1,0 +1,40 @@
+.cart {
+  @include flex-center;
+  flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+  &__header {
+    @include flex-center;
+    width: 100%;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    &__wrapper {
+      @include flex-center;
+      &__img {
+        width: 20px;
+        height: 20px;
+      }
+      &__title {
+        margin-left: $base;
+        font-size: 25px;
+        font-weight: bolder;
+      }
+    }
+    &__basket {
+      @include flex-center;
+      opacity: 0.6;
+      transition: 0.3s;
+      cursor: pointer;
+      &__img {
+        width: 20px;
+        height: 20px;
+      }
+      &__title {
+        margin-left: $base;
+      }
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}

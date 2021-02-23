@@ -1,0 +1,36 @@
+.cart__item {
+  @include flex-center;
+  justify-content: space-between;
+  width: 100%;
+  &__img {
+    max-width: 80px;
+  }
+  &__name {
+    margin-left: 10px;
+    &__title {
+      font-weight: bolder;
+    }
+    &__text {
+      font-weight: lighter;
+      opacity: 0.6;
+    }
+  }
+  &__qty {
+    @include flex-center;
+    min-width: 70px;
+    width: 10%;
+    justify-content: space-between;
+    &__plus {
+      color: $color-buttons;
+    }
+    &__minus {
+      color: $color-buttons;
+    }
+  }
+  &__price {
+    font-weight: bolder;
+  }
+  &__close {
+    opacity: 0.7;
+  }
+}

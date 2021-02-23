@@ -1,0 +1,70 @@
+.pizza__item {
+  @include flex-center;
+  flex-direction: column;
+  min-width: 264px;
+  width: 22%;
+  height: 460px;
+  margin: 25px auto;
+  &:hover &-img {
+    transform: translateY(-5px);
+  }
+  &-img {
+    max-width: 280px;
+    transition: all 0.3s ease-in;
+  }
+  &-name {
+    font-weight: bolder;
+    margin: 20px 0px;
+  }
+  &__selector {
+    width: 100%;
+    background: #f3f3f3;
+    border-radius: 10px;
+    padding: 5px;
+    &__dough {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 5px;
+      &__btn {
+        width: 50%;
+        border-radius: 5px;
+        font-size: 16px;
+        background: transparent;
+        border: none;
+        &:focus {
+          outline: none;
+        }
+        &.active {
+          background: #fff;
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+  &__price {
+    @include flex-center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+    &-text {
+      font-weight: bolder;
+    }
+    &-btn {
+      @include flex-center;
+      @include buttonPrimary(
+        $color-buttons,
+        $color-primary,
+        $color-primary,
+        $color-buttons
+      );
+      border: 1px solid;
+      &:hover {
+        color: $color-primary;
+        background: $color-buttons;
+      }
+      & > p {
+        font-size: 16px;
+      }
+    }
+  }
+}

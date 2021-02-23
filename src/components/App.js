@@ -1,17 +1,17 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 
-import Navigation from "./Navigation/Navigation";
-import Footer from "./Footer/Footer";
-import Home from "./Home/Home";
+import Home from "./Home";
+import Logo from "./Logo";
+import Cart from "./Cart";
 
 import "../assets/main.scss";
 
 function App() {
   return (
     <div className="App">
-      <Navigation />
       <main className="container">
+        <Logo />
         <Switch>
           <Route exact path="/">
             <Home />
@@ -19,12 +19,11 @@ function App() {
           <Route exact path="/main">
             <div>Main</div>
           </Route>
-          <Route exact path="/shop">
-            <div>Shop</div>
+          <Route exact path="/cart">
+            <Cart />
           </Route>
         </Switch>
       </main>
-      <Footer />
     </div>
   );
 }

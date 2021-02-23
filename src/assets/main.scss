@@ -5,8 +5,9 @@
 @import "./partials/typhography";
 @import "./modules/all";
 
+@import "./components/Cart";
+@import "./components/CartItem";
+@import "./components/Logo";
 @import "./components/App";
-@import "./components/Footer";
 @import "./components/Home";
-@import "./components/HomeCard";
-@import "./components/Navigation";
+@import "./components/Pizza";

@@ -9,11 +9,11 @@
   transition: all 0.3s ease;
   font-size: $fs-primary;
   cursor: pointer;
+  &:focus {
+    outline: none;
+  }
   &.active {
     color: $hover-color;
     background: $hover-bg;
-    &:focus {
-      outline: none;
-    }
   }
 }
