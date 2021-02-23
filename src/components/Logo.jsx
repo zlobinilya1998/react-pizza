@@ -1,7 +1,7 @@
-import "../assets/main.scss";
-import Divider from "@material-ui/core/Divider";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
+
+import Divider from "@material-ui/core/Divider";
 
 import logo from "../assets/img/logo.svg";
 import cart from "../assets/img/cart.svg";

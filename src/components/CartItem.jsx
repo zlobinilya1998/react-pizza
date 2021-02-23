@@ -1,11 +1,9 @@
-import React from "react";
 import { connect } from "react-redux";
 import {
   deleteItemActionCreator,
   incrementQtyActionCreator,
   decrementQtyActionCreator,
 } from "../app/reducers/appReducer";
-import "../assets/main.scss";
 
 import HighlightOffIcon from "@material-ui/icons/HighlightOff";
 import AddCircleOutlineRoundedIcon from "@material-ui/icons/AddCircleOutlineRounded";
@@ -20,20 +18,11 @@ function CartItem(props) {
 
   return (
     <div className="cart__item">
-      <div
-        style={{
-          display: "flex",
-          width: "35%",
-          justifyContent: "flex-start",
-          minWidth: "300px",
-          alignItems: "center",
-          marginBottom: "10px",
-        }}
-      >
-        <img className="cart__item__img" src={props.imageUrl} alt="" />
-        <div className="cart__item__name">
-          <p className="cart__item__name__title">{props.name}</p>
-          <p className="cart__item__name__text">
+      <div className="cart__item-left">
+        <img className="cart__item-left__img" src={props.imageUrl} alt="" />
+        <div className="cart__item-left__name">
+          <p className="cart__item-left__name__title">{props.name}</p>
+          <p className="cart__item-left__name__text">
             {props.dough}, {props.size} см.
           </p>
         </div>

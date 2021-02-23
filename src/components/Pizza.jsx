@@ -1,9 +1,7 @@
-import React from "react";
 import { useState } from "react";
 import { connect } from "react-redux";
-import { addItemActionCreator } from "../app/reducers/appReducer";
 
-import "../assets/main.scss";
+import { addItemActionCreator } from "../app/reducers/appReducer";
 
 import AddIcon from "@material-ui/icons/Add";
 

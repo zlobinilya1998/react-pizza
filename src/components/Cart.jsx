@@ -1,11 +1,9 @@
-import React from "react";
 import { connect } from "react-redux";
-import cart from "../assets/img/cartBlack.svg";
-import basket from "../assets/img/basket.svg";
-
 import { clearBasketActionCreator } from "../app/reducers/appReducer";
 
+import cart from "../assets/img/cartBlack.svg";
 import CartItem from "./CartItem";
+import basket from "../assets/img/basket.svg";
 
 function Cart(props) {
   return (

@@ -1,4 +1,3 @@
-import React from "react";
 import { Switch, Route } from "react-router-dom";
 
 import Home from "./Home";
@@ -15,9 +14,6 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Home />
-          </Route>
-          <Route exact path="/main">
-            <div>Main</div>
           </Route>
           <Route exact path="/cart">
             <Cart />

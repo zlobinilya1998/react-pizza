@@ -1,14 +1,13 @@
 import React from "react";
 import { useState, useRef } from "react";
-import ArrowDropUpIcon from "@material-ui/icons/ArrowDropUp";
-import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
-import Popover from "@material-ui/core/Popover";
-import Divider from "@material-ui/core/Divider";
 
 import Pizza from "./Pizza";
 import { pizzas } from "../db.json";
 
-import "../assets/main.scss";
+import ArrowDropUpIcon from "@material-ui/icons/ArrowDropUp";
+import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
+import Popover from "@material-ui/core/Popover";
+import Divider from "@material-ui/core/Divider";
 
 function Home() {
   let [activeItem, setActiveItem] = useState(0);
