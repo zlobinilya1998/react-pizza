@@ -25,6 +25,11 @@
       opacity: 0.6;
       transition: 0.3s;
       cursor: pointer;
+      background: transparent;
+      border: none;
+      &:focus {
+        outline: none;
+      }
       &__img {
         width: 20px;
         height: 20px;
@@ -34,6 +39,28 @@
       }
       &:hover {
         opacity: 1;
+      }
+    }
+  }
+  &__empty {
+    width: 80%;
+    margin: 20px auto;
+    &__text {
+      text-align: center;
+    }
+    &__img {
+      margin: 20px auto;
+    }
+    &__btn {
+      margin-top: 10px;
+      @include buttonPrimary(rgb(71, 197, 40), #faf8f8, #fff, #111);
+      min-width: 250px;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%, 0);
+      &:hover {
+        color: #fff;
+        background: rgb(71, 197, 40);
       }
     }
   }

@@ -33,26 +33,28 @@ function Logo(props) {
         </div>
       </div>
 
-      <Link style={{ textDecoration: "none" }} to="/cart">
-        <button className="logo__btn">
-          <p>{getPrice()} Руб.</p>
-          <Divider
-            style={{ margin: "0px 10px", background: "white" }}
-            orientation="vertical"
-            flexItem
-          />
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              minWidth: "30px",
-            }}
-          >
-            <img src={cart} alt={cart} />
-            <p style={{ margin: "0px 5px" }}>{getItemsInBasket()}</p>
-          </div>
-        </button>
-      </Link>
+      {props.cart.length !== 0 && (
+        <Link style={{ textDecoration: "none" }} to="/cart">
+          <button className="logo__btn">
+            <p>{getPrice()} Руб.</p>
+            <Divider
+              style={{ margin: "0px 10px", background: "white" }}
+              orientation="vertical"
+              flexItem
+            />
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                minWidth: "30px",
+              }}
+            >
+              <img src={cart} alt={cart} />
+              <p style={{ margin: "0px 5px" }}>{getItemsInBasket()}</p>
+            </div>
+          </button>
+        </Link>
+      )}
     </div>
   );
 }

@@ -3,6 +3,9 @@
   justify-content: space-between;
   &__btn {
     @include buttonPrimary(#111, #faf8f8, #fff, #111);
+    &:hover {
+      color: $color-buttons;
+    }
   }
   &__popup {
     @include flex-center;
